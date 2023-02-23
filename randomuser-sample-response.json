@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Riley",
+        "last": "Hicks"
+      },
+      "location": {
+        "street": {
+          "number": 8064,
+          "name": "Crockett St"
+        },
+        "city": "Surrey",
+        "state": "South Dakota",
+        "country": "United States",
+        "postcode": 52496,
+        "coordinates": {
+          "latitude": "89.8442",
+          "longitude": "66.0035"
+        },
+        "timezone": {
+          "offset": "+9:00",
+          "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+        }
+      },
+      "email": "riley.hicks@example.com",
+      "login": {
+        "uuid": "c68dc2ec-7ee1-49ef-b76c-0e0572e58f0d",
+        "username": "test936",
+        "password": "hastings",
+        "salt": "55hJ58SB",
+        "md5": "0137de7bf8bf9fbb48091aedb4f1a6dc",
+        "sha1": "f70d6ba0b20be41943868ab26a78bbb2cac43c45",
+        "sha256": "48d03f84eb8fa3a9d3c229a182eb532e313122a90f6537ba83710529aca91d16"
+      },
+      "dob": {
+        "date": "1945-07-17T08:48:15.801Z",
+        "age": 77
+      },
+      "registered": {
+        "date": "2008-10-09T21:48:36.292Z",
+        "age": 14
+      },
+      "phone": "(393) 690-8718",
+      "cell": "(827) 403-8227",
+      "id": {
+        "name": "SSN",
+        "value": "259-25-7507"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/46.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/46.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/46.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "8a946d81b42ee49d",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
