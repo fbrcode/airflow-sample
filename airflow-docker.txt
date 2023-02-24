@@ -11,6 +11,7 @@ docker exec -it airflow-sample-airflow-scheduler-1 bash
 docker cp airflow-test-airflow-scheduler-1:/opt/airflow/airflow.cfg .
 docker exec -it airflow-sample-airflow-scheduler-1 bash
   curl -X GET http://elastic:9200
-
+docker exec -it airflow-sample-airflow-scheduler-1 bash
+  airflow plugins
 docker-compose --profile flower down && docker-compose --profile flower up -d
 docker-compose --profile flower down
