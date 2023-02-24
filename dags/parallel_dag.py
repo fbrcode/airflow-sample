@@ -11,15 +11,31 @@ with DAG(
     catchup=False,
 ) as dag:
     # tasks
-    extract_a = BashOperator(task_id="extract_a", bash_command="sleep 10")
+    extract_a = BashOperator(
+        task_id="extract_a",
+        bash_command="sleep 10",
+    )
 
-    extract_b = BashOperator(task_id="extract_b", bash_command="sleep 10")
+    extract_b = BashOperator(
+        task_id="extract_b",
+        bash_command="sleep 10",
+    )
 
-    load_a = BashOperator(task_id="load_a", bash_command="sleep 10")
+    load_a = BashOperator(
+        task_id="load_a",
+        bash_command="sleep 10",
+    )
 
-    load_b = BashOperator(task_id="load_b", bash_command="sleep 10")
+    load_b = BashOperator(
+        task_id="load_b",
+        bash_command="sleep 10",
+    )
 
-    transform = BashOperator(task_id="transform", bash_command="sleep 10")
+    transform = BashOperator(
+        task_id="transform",
+        queue="high_cpu",
+        bash_command="sleep 30",
+    )
 
     # sequence
     extract_a >> load_a
