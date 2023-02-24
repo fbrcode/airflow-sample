@@ -2,13 +2,15 @@ https://hub.docker.com/r/apache/airflow/tags
 https://hub.docker.com/layers/apache/airflow/2.5.1-python3.10/images/sha256-9415418c5f82769c926fd1faee8e5acf72d88227971234c10b1fd22b8f03a03f?context=explore
 docker-compose --profile flower up -d
 docker-compose ps -a
-docker exec -it airflow-test-airflow-scheduler-1 bash
+docker exec -it airflow-sample-airflow-scheduler-1 bash
   psql -h postgres -U airflow -d airflow
   airflow -h
   airflow tasks test user_processing create_table 2023-01-01
   airflow tasks test user_processing is_api_available 2023-01-01
   airflow tasks test user_processing extract_users 2023-01-01
 docker cp airflow-test-airflow-scheduler-1:/opt/airflow/airflow.cfg .
+docker exec -it airflow-sample-airflow-scheduler-1 bash
+  curl -X GET http://elastic:9200
 
 docker-compose --profile flower down && docker-compose --profile flower up -d
 docker-compose --profile flower down
